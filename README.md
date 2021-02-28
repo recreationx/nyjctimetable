@@ -8,6 +8,10 @@ Clone the repo
 ```
 git clone https://github.com/recreationx/nyjctimetable.git
 ```
+Install Python (Built on Python 3.9.2) and required libraries. (`BeautifulSoup4`)
+```
+pip install -r requirements.txt
+```
 Run `timetableparse.py`
 ```
 python timetableparse.py [filename] [outputname]

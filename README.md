@@ -1,6 +1,6 @@
 # NYJC Timetable Parser
 
-A timetable paraser for NYJC.
+A timetable parser for NYJC.
 
 # Usage
 

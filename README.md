@@ -1,6 +1,6 @@
 # NYJC Timetable Parser
 
-A timetable parser for NYJC.
+A timetable parser for NYJC. Outputs to `json` or `ics`.
 
 # Usage
 

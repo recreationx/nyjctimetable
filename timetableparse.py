@@ -46,7 +46,13 @@ times = [
     '1600-1630',
     '1630-1700',
     '1700-1730',
-    '1730-1800'
+    '1730-1800',
+    '1800-1830',
+    '1830-1900',
+    '1900-1930',
+    '1930-2000',
+    '2000-2030',
+    '2030-2100'
 ]
 table = soup.findAll('table')[1]
 days = table.findAll('tr')
@@ -58,8 +64,10 @@ for day in days:
         day_list = []
         x = 0
         for c, i in enumerate(a):
+            print(i)
             if c != 0:
                 if i.contents[0] == u'\xa0':
+                    print(x)
                     day_list.append({'name': 'No Lesson', 'venue': 'NIL', 'time': times[x]})
                     x += 1
                 else:
@@ -108,9 +116,3 @@ if args.type == 'json':
         json.dump(day_dict, outfile, indent=4)
 elif args.type == 'ics':
     createcalendar()
-
-
-
-
-    
-
